@@ -17,9 +17,17 @@
 2. [安装样式](https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/tieba-maverick.user.css)
 
 ### 更多风格（需先安装主样式）
-<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/silver-night.user.css">
-	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/silver-night.png" width="40%">
-</a>
-<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/purple.user.css">
-	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/purple.png" width="40%">
-</a>
+<table>
+ 	<tr>
+  		<td align="center">
+			<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/silver-night.user.css">
+				<img src="./assets/screenshot/silver-night.png" width="350"><br/><span>SilverNight</span>
+			</a>
+		</td>
+   		<td align="center">
+			<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/purple.user.css">
+				<img src="./assets/screenshot/purple.png" width="350"><br/><span>Purple</span>
+			</a>
+		</td>
+ 	</tr>
+</table>
