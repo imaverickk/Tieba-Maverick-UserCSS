@@ -7,7 +7,7 @@
 	</a>
 </p>
 
-# Tieba-Maverick-UserCSS
+# 🦄 Tieba-Maverick-UserCSS
 > 百度贴吧现代化风格样式
 
 > 屎山一坨，随缘维护
