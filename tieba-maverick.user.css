@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220318.0
+@version        20220318.1
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -8501,6 +8501,10 @@
 	.core_title_txt:hover,
 	.core_title_txt:visited{
 		color: var(--m-light-0) !important;
+	}
+
+	.core_title_wrap_bright:not(.tbui_follow_fixed) .core_title_txt.pull-left{
+		padding-left: 20px;
 	}
 	
 	.core_title_btns {
