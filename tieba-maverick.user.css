@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220317.2
+@version        20220318.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -5875,6 +5875,7 @@
 		vertical-align: top !important;
 		margin-right: 4px;
 		margin-top: -1px;
+		margin-left: 0!important;
 	}
 	
 	/*编辑框底部面板*/
