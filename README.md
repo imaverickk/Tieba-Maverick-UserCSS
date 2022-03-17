@@ -10,14 +10,16 @@
 # Tieba-Maverick-UserCSS
 > 百度贴吧现代化风格样式
 
+> 屎山一坨，随缘维护
+
 ### 使用方法
 1. 安装 **Stylus 扩展**：[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/fr/firefox/addon/styl-us/)
 2. [安装样式](https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/tieba-maverick.user.css)
 
 ### 更多风格（需先安装主样式）
 <a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/silver-night.user.css">
-	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/silver-night.png" width="30%">
+	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/silver-night.png" width="40%">
 </a>
 <a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/custom-styles/purple.user.css">
-	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/purple.png" width="30%">
+	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/screenshot/purple.png" width="40%">
 </a>
