@@ -1,0 +1,21 @@
+{
+  "name": "tieba-maverick-usercss",
+  "version": "0.0.0",
+  "author": "Maverick",
+  "scripts": {
+    "prepare": "npx simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "node .hooks/pre-commit.js",
+	"post-commit": "node .hooks/post-commit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaverickk/Tieba-Maverick-UserCSS.git"
+  },
+  "devDependencies": {
+    "gitdiff-parser": "^0.2.2",
+    "simple-git": "^3.3.0",
+    "simple-git-hooks": "^2.7.0"
+  }
+}
