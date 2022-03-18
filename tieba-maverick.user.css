@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220318.1
+@version        20220318.2
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -489,8 +489,8 @@
 	gamehead_off "显示" <<<EOT  EOT;
 }
 
-@advanced dropdown creative "用户菜单-视频号" {
-	creative_on "隐藏*" <<<EOT .u_creative,/*视频号*\/ EOT;
+@advanced dropdown creative "视频号相关入口" {
+	creative_on "隐藏*" <<<EOT .u_creative,.publish_homeworks_btn,/*视频号*\/ EOT;
 	creative_off "显示" <<<EOT  EOT;
 }
 
@@ -969,6 +969,8 @@
 	.tbui_fbar_square,
 	
 	/*广告和无用功能*/
+	.u_game,
+	.u_blue,
 	.more-config-navtab,
 	[id^="mediago-tb"],
 	#lu-frs-aside-seat,
