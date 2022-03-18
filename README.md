@@ -1,14 +1,11 @@
-<p align="center">
+<div align="center">
 	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/cover.webp">
-</p>
-<p align="center">
+	<h1>🦄 Tieba-Maverick-UserCSS</h1>
+	<p>百度贴吧现代化风格样式</p>
 	<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/tieba-maverick.user.css">
 		<img src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg">
 	</a>
-</p>
-
-# 🦄 Tieba-Maverick-UserCSS
-> 百度贴吧现代化风格样式
+</div>
 
 > 屎山一坨，随缘维护
 
