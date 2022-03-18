@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220318.2
+@version        20220318.3
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -871,10 +871,10 @@
 			--m-href-color: hsl(215, 30%, 48%);
 			--m-href-visited: hsl(215, 30%, 28%);
 
-			--m-bgcolor: rgb(36, 36, 36);
+			--m-bgcolor: rgb(26, 26, 26);
 			/*[[darkbgimage]]*/
 			
-			--m-content-bg: rgb(42, 42, 42);
+			--m-content-bg: rgb(32, 32, 32);
 			--m-content-shadow: 0 0 20px 2px rgba(0,0,0,.1);
 
 			--m-light-min: 95%;
@@ -884,7 +884,7 @@
 			--m-clight-max: 80%;
 
 			--m-line-darken-lightness: 40%;
-			--m-block-darken-lightness: 59%;
+			--m-block-darken-lightness: 39%;
 			--m-line-darken: 2;
 			--m-block-darken: 2;
 
@@ -893,7 +893,7 @@
 
 			--m-searchbar-lightness: 100%;
 			--m-searchbar-opacity-incr: 0;
-			--m-searchbar-fade: 1;
+			--m-searchbar-fade: 0.2;
 
 			--m-mark-bg: rgba(255,255,255,.14);
 		}
