@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220318.3
+@version        20220318.4
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -888,7 +888,7 @@
 			--m-line-darken: 2;
 			--m-block-darken: 2;
 
-			--m-white-lightness: 20%;
+			--m-white-lightness: 15%;
 			--m-black-lightness: 80%;
 
 			--m-searchbar-lightness: 100%;
