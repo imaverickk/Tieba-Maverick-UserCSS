@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220325.0
+@version        20220326.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -213,7 +213,7 @@
 			padding: 20px 20px;
 		}
 
-		.card_head{
+		.card_top_left .card_head{
 			top: -12px;
 		}
 
@@ -281,9 +281,9 @@
 	topcont_on "隐藏" <<<EOT .top_content,/*头部指引*\/ EOT;
 }
 
-@advanced dropdown repnumalign "贴子列表-回复数垂直对齐整块列表项" {
+@advanced dropdown repnumalign "贴子列表-回复数垂直居中于整块列表项" {
 	repnumalign_on "启用*" <<<EOT
-		/*【帖子列表页回复数垂直对齐整块列表项】*\/
+		/*【帖子列表页回复数垂直居中于整块列表项】*\/
 		.threadlist_li_left,
 		.j_threadlist_li_left {
 			align-items: center;
@@ -511,7 +511,7 @@
 	
 			建议您创建新样式，并在当中重新声明相关变量，以创建自己的风格
 			同名变量，后声明的有效，请确认你的样式加载顺序
-			可参考此示例样式：https://userstyles.org/styles/161224
+			可参考此示例样式：https://github.com/imaverickk/Tieba-Maverick-UserCSS/tree/main/custom-styles
 	
 			如果你使用Stylus，可启用左侧的【实时预览】，便于调整变量时预览效果
 		*/
@@ -542,7 +542,7 @@
 		/*主体框架宽度*/
 	
 		--m-content-bg: rgba(253,253,253,1) ;
-		/*主体框架背景色（https://developer.mozilla.org/en-US/docs/Web/CSS/color）*/
+		/*主体框架背景色（https://developer.mozilla.org/zh-CN/docs/Web/CSS/color）*/
 	
 		--m-content-shadow: 0 0 20px 2px rgba(0,0,0,.1) ;
 		/*主体框架阴影（当主体框架背景色不透明度低于1时，请将此项改为none获得最佳效果；见https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow）*/
@@ -611,7 +611,7 @@
 		
 	
 		--m-headimg: url(/*[[headimg]]*/) ;
-		/*用于替换的贴吧Banner图（此项仅定义图片；是否替换、如何替换请在userstyles的自定义选项中调整）*/
+		/*用于替换的贴吧Banner图（此项仅定义图片；是否替换、如何替换请在自定义选项中调整）*/
 	
 		--m-baravatarimg: url(/*[[baravatarimg]]*/) ;
 		/*用于替换的吧头像（同上）*/
@@ -6317,10 +6317,13 @@
 	.video-poster-add-url-btn{
 		color: var(--m-light-40);
 	}
+	.l_netpic_input,
 	.v_layer_input{
 		border: solid 1px hsla(0,0%,var(--m-black-lightness),.2);
 		background: var(--m-white-color);
+		color: var(--m-light-40) !important;
 	}
+	.l_netpic_input:focus,
 	.v_layer_input:focus{
 		border: solid 1px hsla(0,0%,var(--m-black-lightness),.4);
 	}
@@ -6956,6 +6959,86 @@
 	.emotion_container .s_face[data-surl*="/face/i_f48.png"] .img{background:url(//tb2.bdstatic.com/tb/editor/images/face/i_f48.png)}
 	.emotion_container .s_face[data-surl*="/face/i_f49.png"] .img{background:url(//tb2.bdstatic.com/tb/editor/images/face/i_f49.png)}
 	.emotion_container .s_face[data-surl*="/face/i_f50.png"] .img{background:url(//tb2.bdstatic.com/tb/editor/images/face/i_f50.png)}
+
+	/*贴吧时光轴（剑灵吧）*/
+	.star_collect_time_axis_body{
+		background: var(--m-block-d004);
+		border: none !important;
+		border-top: 1px solid var(--m-line-d004) !important;
+	}
+	.star_time_axis .time_axis_summary{
+		background: var(--m-block-b002);
+	}
+	.star_collect_time_axis_body .star_time_axis .time_axis_summary{
+		border-color: var(--m-line-b004);
+	}
+	.star_time_axis .time_axis_item_hover .time_axis_summary{
+		border-color: var(--m-line-b010);
+	}
+	.star_time_axis h6 a{
+		color: var(--m-light-40);
+	}
+	.star_collect_time_axis_body .time_axis_source{
+		color: var(--m-light-70);
+	}
+	.star_collect_time_axis_body .time_axis_time{
+		background: none;
+		color: var(--m-light-50);
+	}
+	.star_time_axis_prev,
+	.star_time_axis_next{
+		background: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--m-light-60);
+	}
+	.star_time_axis_prev:before,
+	.star_time_axis_next:before{
+		font-family: 'Material Icons';
+	}
+	.star_time_axis_prev:before{
+		content: "\e5e0";
+	}
+	.star_time_axis_next:before{
+		content: "\e5e1";
+	}
+	.star_collect_time_axis_body .star_time_axis_prev_hover,
+	.star_collect_time_axis_body .star_time_axis_next_hover{
+		color: var(--m-light-50);
+	}
+	.star_collect_time_axis_body .prev_disabled,
+	.star_collect_time_axis_body .next_disabled{
+		opacity: 0;
+	}
+	.star_collect_time_axis_body .star_time_axis_arrow{
+		display: none;
+	}
+	.platform_star_time_axis_arrow_container{
+		background: none !important;
+		background-color: var(--m-white-color) !important;
+		border-radius: 50%;
+		box-shadow: 0 1px 6px hsla(0,0%,var(--m-black-lightness),.1);
+		overflow: hidden;
+	}
+	.platform_star_time_axis_arrow_container:before{
+		content: "\e5cf";
+		font-family: 'Material Icons';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: var(--m-block-d004);
+		color: var(--m-light-40);
+		border: 1px solid var(--m-line-d008);
+		box-sizing: border-box;
+		border-radius: 50%;
+	}
+	.platform_star_time_axis_arrow_container.platform_star_time_axis_hide:before{
+		content: "\e5ce";
+	}
 }
 	
 @-moz-document regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)((/+f(/+good)?\\?.*)|(/[0-9a-zA-Z_%]+([?#]+.*)*))$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+bawu2/+platform/+(detailsInfo|listBawuTeamInfo|listCandidateInfo|listMemberInfo)\\?.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+show/+zhanqi/+roomList\\?.*$") {
@@ -8327,6 +8410,73 @@
 		border-bottom: 1px solid var(--m-line-d006) !important;
 		background: var(--m-block-d004) !important;
 		color: var(--m-light-40) !important;
+	}
+
+	/*明星贴吧-官方日程*/
+	.offical_schedule_wrap .trip_ul{
+		border-color: var(--m-ehcolor);
+	}
+	.offical_schedule_wrap .trip_content_item{
+		border-color: var(--m-line-d008);
+	}
+	.offical_schedule_wrap .trip_content_item:before{
+		background: none;
+		border-radius: 50%;
+		background-color: var(--m-ehcolor);
+		border: 2px solid var(--m-ecolor);
+		margin-left: -2px;
+	}
+	.offical_schedule_wrap .trip_content{
+		background-color: var(--m-block-d002);
+	}
+	.offical_schedule_wrap .trip_date_addr{
+		background-color: var(--m-ecolor);
+	}
+	.offical_schedule_wrap .trip_line{
+		color: rgba(255,255,255,.5);
+	}
+	.offical_schedule_wrap .trip_content_item .arrow{
+		background: none;
+	}
+
+	/*小说贴吧-人气榜*/
+	#novel-ranking .novel-rank-top-nav td{
+		color: inherit;
+		border-bottom: 1px solid var(--m-line-d010);
+	}
+	#novel-ranking .novel-rank-top-nav td a{
+		color: var(--m-light-60);
+		border-left: 1px solid var(--m-line-d008);
+	}
+	#novel-ranking .novel-rank-top-nav td:hover, #novel-ranking .novel-rank-top-nav .active{
+		border: 1px solid var(--m-href-color);
+		background: none;
+	}
+	#novel-ranking .novel-rank-top-nav li:hover a, #novel-ranking .novel-rank-top-nav .active a{
+		color: var(--m-href-color);
+	}
+	#novel-ranking .novel-ranking-item{
+		border-bottom: 1px solid var(--m-line-d004);
+	}
+	#novel-ranking .novel-ranking-item.active{
+		color: var(--m-href-color);
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--m-line-d004);
+	}
+	#novel-ranking .novel-ranking-item-name a{
+		color: var(--m-light-50);
+	}
+	#novel-ranking .novel-ranking-item-info-title{
+		color: var(--m-light-50) !important;
+	}
+	#novel-ranking .novel-ranking-position-number{
+		background-color: var(--m-block-b006);
+		border: none;
+		color: var(--m-light-72);
+	}
+	.novel-award-aside{
+		border-top: 1px solid var(--m-line-d006);
 	}
 }
 	
