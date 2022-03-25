@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220319.0
+@version        20220325.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -12,7 +12,7 @@
 
 @advanced dropdown dark "暗色模式" {
 	dark_auto "跟随系统*" <<<EOT @media screen and (prefers-color-scheme: dark) EOT;
-	dark_on "启用" <<<EOT @media screen EOT;
+	dark_on "启用" <<<EOT @supports (display: block) EOT;
 	dark_off "禁用" <<<EOT @supports not (display: block)  EOT;
 }
 @advanced dropdown darkbgimage "暗色模式禁用页面背景图" {
@@ -590,7 +590,7 @@
 		--m-searchbar-opacity-incr: 0 ;
 		/*搜索栏不透明度增量（区间为0-1，建议使用0.01-0.1之间的值）*/
 	
-		--m-searchbar-fade: 0.6 ;
+		--m-searchbar-fade: 0.3 ;
 		/*搜索栏区域背景淡化层的不透明度（区间为0-1，淡化层的颜色为上述定义的纯白基准值）*/
 	
 	
