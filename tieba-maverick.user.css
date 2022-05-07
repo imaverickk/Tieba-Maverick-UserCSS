@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220419.0
+@version        20220507.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -969,6 +969,7 @@
 	.tbui_fbar_square,
 	
 	/*广告和无用功能*/
+	[id="pagelet_frs-aside/pagelet/aside_ad"],
 	[id="pagelet_frs-aside/pagelet/fc_lu_ad"],
 	.u_game,
 	.u_blue,
