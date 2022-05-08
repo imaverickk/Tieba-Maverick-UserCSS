@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220507.0
+@version        20220508.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -969,6 +969,9 @@
 	.tbui_fbar_square,
 	
 	/*广告和无用功能*/
+	#error_404_iframe,
+	.lu-user-wrapper,
+	.lu-user-wrapper-seat,
 	[id="pagelet_frs-aside/pagelet/aside_ad"],
 	[id="pagelet_frs-aside/pagelet/fc_lu_ad"],
 	.u_game,
@@ -2229,6 +2232,7 @@
 		margin-bottom: 20px !important;
 	}
 	
+	.page404 .search-form:before,
 	.search_bright:before{
 		content: "";
 		position: absolute;
@@ -2254,6 +2258,7 @@
 		margin: 0 auto!important;
 	}
 	
+	.page404 .search-form>p,
 	.search_top,
 	.search_main_wrap {
 		position: relative;
@@ -2306,6 +2311,23 @@
 		pointer-events: none;
 	}
 	
+	.page404 .search-form{
+		background: none !important;
+		width: var(--m-mainwidth) !important;
+		height: auto !important;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.page404 .tb-logo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 60px;
+		height: 30px;
+	}
+
 	.search_main,
 	.search_form {
 		width: 100% !important;
@@ -2314,6 +2336,7 @@
 		box-sizing: border-box;
 	}
 	
+	.page404 .search-form>p,
 	.search_form {
 		display: flex;
 	}
@@ -2322,6 +2345,7 @@
 		display: none !important;
 	}
 	
+	.page404 .search-form>p:before,
 	.search .s_logo,
 	.search_top:before,
 	.search_logo,
@@ -2348,6 +2372,7 @@
 		color: hsla(0,0%,var(--m-searchbar-lightness),calc(0.4 + var(--m-searchbar-opacity-incr))) !important;
 	}
 	
+	.page404 .search-form>p:before,
 	.search .s_logo:before,
 	.search_top:before,
 	.search_logo:before,
@@ -2380,6 +2405,7 @@
 		flex: 1;
 	}
 	
+	.page404 .search-input,
 	.tb_header_search_input,
 	.search_ipt {
 		flex: 1;
@@ -2399,7 +2425,12 @@
 		transition-duration: .5s;
 		transition-timing-function: ease;
 	}
+
+	.page404 .search-input{
+		box-shadow: none !important;
+	}
 	
+	.page404 .search-input,
 	.tb_header_search_input:focus,
 	.search_ipt:focus {
 		color: var(--m-light-40) !important;
@@ -2415,6 +2446,8 @@
 		height: auto !important;
 		background: none !important;
 	}
+
+	.page404 .search-button,
 	.search .s_nav a,
 	.s_btn_wr>.s_btn,
 	.s_tools>a,
@@ -2445,6 +2478,8 @@
 		transition-timing-function: ease;
 		font-weight: normal !important;
 	}
+
+	.page404 .search-button:hover,
 	.search .s_nav a:hover,
 	.s_btn_wr>.s_btn:hover,
 	.search_nav>a:hover,
@@ -2456,6 +2491,7 @@
 		background: hsla(0,0%,var(--m-searchbar-lightness),calc(0.06 + var(--m-searchbar-opacity-incr))) !important;
 	}
 	
+	.page404 .search-button:active,
 	.search .s_nav a:active,
 	.s_btn_wr>.s_btn:active,
 	.search_nav>a:active,
@@ -2466,6 +2502,7 @@
 		background: hsla(0,0%,var(--m-searchbar-lightness),calc(0.1 + var(--m-searchbar-opacity-incr))) !important;
 	}
 	
+	.page404 .search-button,
 	.search .s_nav a:first-of-type,
 	.search_nav>a:first-of-type,
 	.search_btn_enter_ba {
@@ -10574,6 +10611,36 @@
 	}
 	.wrap2>.l_container .content{
 		margin-bottom: 80px !important;
+	}
+
+	.page404 .main-wraper {
+		width: var(--m-mainwidth);
+		font-family: inherit;
+		color: var(--m-light-70);
+	}
+
+	.page404 .main-title{
+		color: var(--m-light-42);
+	}
+
+	.page404 .load-code-img{
+		display: none;
+	}
+
+	.page404 .normal-info-content{
+		color: var(--m-light-50);
+		text-align: left;
+	}
+
+	.page404 .message-info{
+		width: var(--m-mainwidth);
+		background-color: var(--m-content-bg);
+		border-radius: var(--m-radius);
+		box-shadow: var(--m-content-shadow);
+	}
+
+	.footer404 {
+		color: var(--m-light-72);
 	}
 }
 	
