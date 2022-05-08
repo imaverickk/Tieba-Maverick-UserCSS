@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220508.1
+@version        20220508.2
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -911,7 +911,7 @@
 	}
 }
 	
-@-moz-document regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)((/+f(/+good)?\\?.*)|(/[0-9a-zA-Z_%]+([?#]+.*)*))$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+p/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+home/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+i/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+show/+zhanqi/+roomList\\?.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+(index.html.*)*([\\?#]+.*)*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+pmc(([\\?#]+.*)*|/+.*)$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+sysmsg(([\\?#]+.*)|/+.*)$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+bawu2/+.*$") {
+@-moz-document regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)((/+f(/+good)?\\?.*)|(/[0-9a-zA-Z_%]+([?#]+.*)*))$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+p/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+home/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+i/+.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+show/+zhanqi/+roomList\\?.*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+(index.html.*)*([\\?#]+.*)*$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+pmc(([\\?#]+.*)*|/+.*)$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+sysmsg(([\\?#]+.*)|/+.*)$"), regexp("^https?://(tieba\\.baidu\\.com|www\\.tieba\\.com)/+bawu2/+(?!errorPage).*$") {
 	/* 贴吧首页、贴吧页、贴子页、个人主页、i贴吧、消息中心、用户服务中心、吧务中心 */
 	
 	/*【字体】*/
@@ -10655,6 +10655,61 @@
 
 	.footer404 {
 		color: var(--m-light-72);
+	}
+
+	.report-success,
+	.report-start{
+		background-color: var(--m-white-color) !important;
+	}
+
+	.report-close{
+		cursor: pointer;
+	}
+
+	.report-success-title,
+	.report-start .page-title{
+		color: var(--m-light-20) !important;
+	}
+
+	.report-success .report-success-tip{
+		background: var(--m-block-d002) !important;
+	}
+
+	.report-success .report-success-tip .tip-title{
+		color: var(--m-light-40) !important;
+	}
+
+	.report-success .report-success-tip .tip-text{
+		color: var(--m-light-60) !important;
+	}
+
+	.tbv-btn, .tbv-btn-default{
+		color: var(--m-light-30) !important;
+		border: 1px solid var(--m-line-d010) !important;
+		background: var(--m-block-d004) !important;
+	}
+
+	.tbv-btn-primary{
+		color: #fff !important;
+		background:  var(--m-ecolor) !important;
+	}
+
+	.tbv-radio .tbv-radio-label{
+		color: var(--m-light-50) !important;
+	}
+
+	.report-input textarea{
+		border-color: var(--m-line-d010) !important;
+		color: var(--m-light-40) !important;
+	}
+
+	.report-button .report-button-line{
+		border-radius: 0 !important;
+		border-bottom: 1px solid var(--m-line-d020);
+	}
+
+	.report-button .report-button-line:after{
+		content: none !important;
 	}
 }
 	
