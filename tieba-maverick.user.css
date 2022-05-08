@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220508.2
+@version        20220508.3
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -10696,6 +10696,10 @@
 
 	.tbv-radio .tbv-radio-label{
 		color: var(--m-light-50) !important;
+	}
+
+	.tbv-radio .tbv-radio-input .tbv-radio-inner{
+		background-color: transparent;
 	}
 
 	.report-input textarea{
