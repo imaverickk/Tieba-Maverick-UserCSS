@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220509.1
+@version        20220509.2
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -7177,7 +7177,9 @@
 	}
 	
 	.threadlist_media>li{
+		height: auto !important;
 		border: none !important;
+		max-height: 135px !important;
 	}
 	
 	.threadlist_bright .thread_pic_bright,
