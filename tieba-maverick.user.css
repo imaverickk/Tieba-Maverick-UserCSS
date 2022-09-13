@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220913.0
+@version        20220913.1
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -409,8 +409,8 @@
 }
 
 @advanced dropdown postusericons "楼层-用户印记" {
-	postusericons_on "隐藏*" <<<EOT .l_post_bright .d_icons,/*贴子内页用户印记*\/ EOT;
-	postusericons_off "显示" <<<EOT  EOT;
+	postusericons_off "显示*" <<<EOT  EOT;
+	postusericons_on "隐藏" <<<EOT .l_post_bright .d_icons,/*贴子内页用户印记*\/ EOT;
 }
 
 @advanced dropdown hidebtn "楼层-“隐藏用户贴子”按钮" {
@@ -975,6 +975,7 @@
 	.tbui_fbar_square,
 	
 	/*广告和无用功能*/
+	.bus-top-activity-wrap,
 	#error_404_iframe,
 	.lu-user-wrapper,
 	.lu-user-wrapper-seat,
