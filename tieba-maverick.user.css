@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220509.2
+@version        20220913.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -147,14 +147,14 @@
 @advanced dropdown titlefixed "贴子页下方功能浮层" {
 	titlefixed_off "显示*" <<<EOT  EOT;
 	titlefixed_on "隐藏" <<<EOT
-		/*【屏蔽帖子内页功能浮层】*\/
+		/*【屏蔽贴子内页功能浮层】*\/
 		.left_section .core_title_absolute_bright,
 		.p_thread.thread_theme_bright_absolute {
 			display: none !important;
 		}
 	EOT;
 	titlefixed_half "仅显示圆形按钮" <<<EOT
-		/*帖子内页功能浮层只显示按钮*\/
+		/*贴子内页功能浮层只显示按钮*\/
 
 		.p_thread.thread_theme_bright_absolute{
 			display: none !important;
@@ -283,7 +283,7 @@
 
 @advanced dropdown repnumalign "贴子列表-回复数垂直居中于整块列表项" {
 	repnumalign_on "启用*" <<<EOT
-		/*【帖子列表页回复数垂直居中于整块列表项】*\/
+		/*【贴子列表页回复数垂直居中于整块列表项】*\/
 		.threadlist_li_left,
 		.j_threadlist_li_left {
 			align-items: center;
@@ -360,7 +360,7 @@
 @advanced dropdown threadentry "贴子列表-贴子入口" {
 	threadentry_title "仅标题*" <<<EOT  EOT;
 	threadentry_list "扩大至整块列表项" <<<EOT
-		/*【帖子入口扩展至整块帖子列表项】*\/
+		/*【贴子入口扩展至整块贴子列表项】*\/
 		.threadlist_title a.j_th_tit:after {
 			content: "";
 			display: block;
@@ -404,13 +404,18 @@
 }
 
 @advanced dropdown membericon "楼层-会员标识" {
-	membericon_on "隐藏*" <<<EOT .lzl_cnt .pre_icon_wrap,.p_postlist .pre_icon_wrap,/*帖子内页会员标识*\/ EOT;
+	membericon_on "隐藏*" <<<EOT .lzl_cnt .pre_icon_wrap,.p_postlist .pre_icon_wrap,/*贴子内页会员标识*\/ EOT;
 	membericon_off "显示" <<<EOT  EOT;
+}
+
+@advanced dropdown postusericons "楼层-用户印记" {
+	postusericons_on "隐藏*" <<<EOT .l_post_bright .d_icons,/*贴子内页用户印记*\/ EOT;
+	postusericons_off "显示" <<<EOT  EOT;
 }
 
 @advanced dropdown hidebtn "楼层-“隐藏用户贴子”按钮" {
 	hidebtn_off "显示*" <<<EOT  EOT;
-	hidebtn_on "隐藏" <<<EOT div.user-hide-post-down,/*隐藏用户帖子按钮*\/ EOT;
+	hidebtn_on "隐藏" <<<EOT div.user-hide-post-down,/*隐藏用户贴子按钮*\/ EOT;
 }
 
 @advanced dropdown sign "楼层-签名档" {
@@ -868,8 +873,8 @@
 			--m-ecolor: #1e304e;
 			--m-ehcolor: #334e79;
 
-			--m-href-color: hsl(215, 30%, 48%);
-			--m-href-visited: hsl(215, 30%, 28%);
+			--m-href-color: #456faa;
+			--m-href-visited: #5c6d86;
 
 			--m-bgcolor: rgb(26, 26, 26);
 			/*[[darkbgimage]]*/
@@ -952,6 +957,7 @@
 	/*[[medalbtn]]*/
 	/*[[saveface]]*/
 	/*[[membericon]]*/
+	/*[[postusericons]]*/
 	/*[[onesharebtn]]*/
 	/*[[onegiftbtn]]*/
 	/*[[complient]]*/
@@ -9304,8 +9310,8 @@
 	}
 	
 	.louzhubiaoshi {
-		top: -6px !important;
-		right: 12px !important;
+		top: -10px !important;
+		right: 6px !important;
 		z-index: 1;
 		background: none !important;
 		width: 30px;
@@ -9317,11 +9323,11 @@
 		width: 30px;
 		height: 30px;
 		line-height: 30px;
-		color: rgba(0,0,0,.3)
+		color: hsla(0,0%,var(--m-block-darken-lightness),calc(0.3*var(--m-block-darken)));
 	}
 	
 	.louzhubiaoshi a:hover {
-		color: rgba(0,0,0,.4)
+		color: hsla(0,0%,var(--m-block-darken-lightness),calc(0.4*var(--m-block-darken)));
 	}
 	
 	.louzhubiaoshi a:before {
