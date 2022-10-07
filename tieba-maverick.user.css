@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20220914.0
+@version        20221008.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -975,6 +975,7 @@
 	.tbui_fbar_square,
 	
 	/*广告和无用功能*/
+	.thread_item_box[add-shield-track="1"],
 	.l_post_bright[add-shield-track="1"],
 	.bus-top-activity-wrap,
 	#error_404_iframe,
