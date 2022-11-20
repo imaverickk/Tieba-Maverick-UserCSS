@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20221008.0
+@version        20221121.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -10724,6 +10724,12 @@
 
 	.report-button .report-button-line:after{
 		content: none !important;
+	}
+
+	.shield-tip{
+		background: var(--m-ecolor);
+		color: #fff;
+		margin-bottom: 10px;
 	}
 }
 	
