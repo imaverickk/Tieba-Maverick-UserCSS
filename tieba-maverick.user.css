@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20221121.0
+@version        20221202.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -933,6 +933,11 @@
 		color: #fff;
 		background-color: var(--m-ecolor);
 		text-shadow: none;
+	}
+
+	/* 哀悼日的黑白滤镜？可以，但没必要 */
+	html.tb-allpage-filter{
+		filter: none;
 	}
 	
 	/*【屏蔽内容】*/
