@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20231207.0
+@version        20240101.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -2212,6 +2212,10 @@
 	.userinfo_sex.userinfo_sex_female:before{
 		content: "\e590";
 		color: #ff7f7f;
+	}
+
+	.search_dialog_bright .j_form{
+		display: flex;
 	}
 
 }
