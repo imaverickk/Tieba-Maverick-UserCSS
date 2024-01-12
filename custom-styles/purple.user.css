@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick @Purple
-@version        20220317.0
+@version        20240112.0
 @description    Tieba-Maverick自定义风格Demo
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -32,7 +32,7 @@
 		--m-href-visited: hsl(295, 0%, 85%);
 		
 		--m-bgcolor: rgb(33, 33, 33);
-		--m-bgimage: url(https://s1.ax1x.com/2022/03/17/qCjVYT.jpg);
+		--m-bgimage: url(https://imgsa.baidu.com/forum/pic/item/2f39a782b9014a903763ab61a7773912b21beeb8.jpg);
 		--m-content-bg: rgba(0,0,0,.24);
 		--m-content-shadow: none;
 		
