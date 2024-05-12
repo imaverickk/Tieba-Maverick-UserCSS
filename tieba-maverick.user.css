@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240101.0
+@version        20240512.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -3473,7 +3473,6 @@
 		position: fixed;
 		left: 50% !important;
 		bottom: 12vh !important;
-		z-index: 0 !important;
 	}
 	
 	.tbui_aside_fbar_button {
@@ -3729,7 +3728,6 @@
 	}
 	
 	.tbui_aside_favor_list{
-		margin-right: 6px;
 		padding: 10px 4px 4px 10px !important;
 	}
 	
@@ -3764,11 +3762,14 @@
 		background: var(--m-block-b008) !important;
 		border-radius: 4px !important;
 		color: var(--m-clight-40) !important;
-		padding: 2px 4px;
+		padding: 2px 8px;
 		margin: 0 6px 6px 0 !important;
-		width: 75px !important;
+		width: 68px !important;
 		display: block !important;
 		text-decoration: none !important;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	
 	/*收藏标签管理弹窗*/
