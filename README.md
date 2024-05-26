@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/assets/cover.webp">
+	<img src="./assets/cover.webp">
 	<h1>🦄 Tieba-Maverick-UserCSS</h1>
 	<p>百度贴吧现代化风格样式</p>
 	<a href="https://raw.githubusercontent.com/imaverickk/Tieba-Maverick-UserCSS/master/tieba-maverick.user.css">
