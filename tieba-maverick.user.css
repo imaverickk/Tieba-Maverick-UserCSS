@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240512.0
+@version        20240630.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -3483,7 +3483,7 @@
 	}
 	
 	.tbui_aside_fbar_button >a {
-		display: block;
+		display: flex !important;
 		position: relative;
 		width: inherit !important;
 		height: inherit !important;
@@ -3493,19 +3493,16 @@
 		overflow: hidden;
 		font-size: 0;
 		white-space: nowrap;
-		text-indent: -45px;
-		transition-property: text-indent;
-		transition-duration: .6s;
-		transition-timing-function: ease;
+		text-decoration: none !important;
 	}
 	
-	.tbui_aside_fbar_button >a:hover {
-		text-indent: 0px;
+	.tbui_aside_fbar_button >a:hover:before {
+		margin-left: 0;
 	}
 	
 	.tbui_aside_fbar_button >a:after,
 	.tbui_aside_fbar_button >a:before {
-		display: inline-block;
+		flex: 0 0 auto;
 		color: var(--m-clight-80);
 		width: inherit !important;
 		height: inherit !important;
@@ -3531,6 +3528,10 @@
 		line-height: 20px;
 		padding-top: 5px;
 		padding-left: 7px;
+		margin-left: -45px;
+		transition-property: margin-left;
+		transition-duration: .6s;
+		transition-timing-function: ease;
 	}
 	
 	.tbui_fbar_top>a:after {
@@ -3636,7 +3637,7 @@
 	}
 	
 	.tbui_fbar_top>a {
-		transition-property: text-indent, transform;
+		transition-property: transform;
 	}
 	
 	.tbui_fbar_top[style*="hidden"] {
@@ -12275,6 +12276,7 @@
 	}
 	
 	.goTop {
+		display: flex !important;
 		background: var(--m-content-bg) !important;
 		width: 45px !important;
 		height: 50px !important;
@@ -12284,19 +12286,16 @@
 		overflow: hidden;
 		font-size: 0;
 		white-space: nowrap;
-		text-indent: -45px;
-		transition-property: text-indent;
-		transition-duration: .6s;
-		transition-timing-function: ease;
+		bottom: 100px;
 	}
 	
-	.goTop:hover {
-		text-indent: 0px;
+	.goTop:hover:before {
+		margin-left: 0;
 	}
 	
 	.goTop:after,
 	.goTop:before {
-		display: inline-block;
+		flex: 0 0 auto;
 		color: var(--m-clight-80);
 		width: inherit !important;
 		height: inherit !important;
@@ -12312,6 +12311,10 @@
 		line-height: 20px;
 		padding-top: 5px;
 		padding-left: 7px;
+		margin-left: -45px;
+		transition-property: margin-left;
+		transition-duration: .6s;
+		transition-timing-function: ease;
 	}
 	
 	.goTop:after {
