@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240630.1
+@version        20240630.2
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -8723,6 +8723,16 @@
 		color: var(--m-light-0) !important;
 	}
 
+	.pb-title-answer-icon{
+		background: var(--m-ehcolor);
+		margin: 20px 0 0 20px;
+		user-select: none;
+	}
+	
+	.pb-title-answer-icon+.core_title_txt.pull-left{
+		padding-left: 10px !important;
+	}
+
 	.core_title_wrap_bright:not(.tbui_follow_fixed) .core_title_txt.pull-left{
 		padding-left: 20px;
 	}
@@ -10256,6 +10266,16 @@
 		background: var(--m-ecolor) !important;
 		border-radius: 28px;
 		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1), 0 2px 16px 0 rgba(0,0,0,0.08) !important;
+	}
+
+	.core_title_absolute_bright .pb-title-answer-icon{
+		margin: 20px 0 0 40px;
+		position: relative;
+		z-index: 1;
+	}
+	
+	.core_title_absolute_bright .pb-title-answer-icon+.core_title_txt{
+		margin-left: 0 !important;
 	}
 	
 	.core_title_absolute_bright .core_title_txt {
