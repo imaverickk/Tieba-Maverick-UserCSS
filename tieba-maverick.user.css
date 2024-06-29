@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240630.0
+@version        20240630.1
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -3638,6 +3638,8 @@
 	
 	.tbui_fbar_top>a {
 		transition-property: transform;
+		transition-duration: .6s;
+		transition-timing-function: ease;
 	}
 	
 	.tbui_fbar_top[style*="hidden"] {
