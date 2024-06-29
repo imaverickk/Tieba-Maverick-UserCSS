@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240630.2
+@version        20240630.3
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -3059,6 +3059,10 @@
 	.star_class_nav>li,
 	.nav_list>li {
 		flex: 1;
+	}
+
+	.nav_list>li:has(>a[href=""]){
+		display: none;
 	}
 	
 	.forumInfo_nav_list>li,
