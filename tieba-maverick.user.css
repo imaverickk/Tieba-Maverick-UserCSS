@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20240630.3
+@version        20241018.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -2768,10 +2768,9 @@
 	.forum_info_wrap,
 	.good_list_outer,
 	.content {
-		margin: 20px auto !important;
+		margin: 0 auto !important;
 		background: transparent !important;
 		position: relative;
-		margin-bottom: 0 !important;
 		min-height: 0;
 		border-radius: var(--m-radius);
 	}
