@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20250922.0
+@version        20250922.1
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -2255,6 +2255,10 @@
 		padding-top: 20px !important;
 		margin-bottom: 20px !important;
 	}
+
+	.head_inner +.l_container {
+		margin-top: 20px !important;
+	}
 	
 	.page404 .search-form:before,
 	.search_bright:before{
@@ -2896,10 +2900,6 @@
 		border-radius: inherit;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
-	}
-	
-	.head_top {
-		margin-top: 30px !important;
 	}
 	
 	.head_top+.head_content {
