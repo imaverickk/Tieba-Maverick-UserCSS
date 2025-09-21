@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Tieba-Maverick [百度贴吧]
-@version        20250921.0
+@version        20250922.0
 @description    百度贴吧现代化风格样式
 @namespace      https://github.com/imaverickk
 @author         Maverick
@@ -2386,6 +2386,10 @@
 		pointer-events: auto;
 		text-decoration: none !important;
 		transition: color .4s ease;
+	}
+
+	.general-search-test +#search_logo_small{
+		display: none !important;
 	}
 	
 	.search .s_logo:hover:before,
@@ -5904,7 +5908,7 @@
 	
 	.poster_share,
 	.poster_signature {
-		display: inline-block !important;
+		display: inline-flex !important;
 		box-sizing: border-box;
 		margin: 0 !important;
 		padding: 0 20px !important;
@@ -5951,6 +5955,30 @@
 		margin-right: 4px;
 		margin-top: -1px;
 		margin-left: 0!important;
+	}
+
+	/*内容声明*/
+	.ai-entrance {
+		display: inline-block;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0 20px;
+		height: 40px;
+		line-height: 40px;
+		background: var(--m-block-d008);
+		border-radius: 0 0 10px 10px;
+		color: var(--m-light-60);
+	}
+	
+	.tb_rich_poster .poster_body .ai-entrance .select-box {
+		background-color: var(--m-white-color);
+		box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+	}
+	.tb_rich_poster .poster_body .ai-entrance .select-box .select-box-item::before{
+		background-color: var(--m-line-d006);
+	}
+	.tb_rich_poster .poster_body .ai-entrance .select-box .select-box-item.original-type-active{
+		color: var(--m-clight-80);
 	}
 	
 	/*编辑框底部面板*/
@@ -7205,6 +7233,10 @@
 	.thread_top_list>li:hover,
 	.threadlist_bright>li:hover{
 		background: var(--m-block-d002);
+	}
+
+	.thread_top_list>li[data-tid="1"]{
+		display: none !important;
 	}
 	
 	.threadlist_media>li{
