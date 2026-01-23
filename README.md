@@ -1,3 +1,5 @@
+> 2026-01-23：贴吧官方推出了新版界面，此样式应该不会再维护了
+
 <div align="center">
 	<img src="./assets/cover.webp">
 	<h1>🦄 Tieba-Maverick-UserCSS</h1>
